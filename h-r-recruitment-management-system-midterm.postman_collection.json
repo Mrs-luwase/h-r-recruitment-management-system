@@ -1,0 +1,832 @@
+{
+  "info": {
+    "_postman_id": "b5428627-5ede-45ab-b8a8-a1734710a6e8",
+    "name": "h-r-recruitment-management-system",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58354029",
+    "_collection_link": "https://go.postman.co/collection/58354029-b5428627-5ede-45ab-b8a8-a1734710a6e8?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "seed",
+      "item": [
+        {
+          "name": "dept-production",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Production\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/departments/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "dept-finance",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Finance\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/departments/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "dept-engineering",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Engineering\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/departments/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "dept-logistics",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Logistics\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/departments/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "interviewroom-1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"roomNumber\": 1,\r\n     \"name\": \"Room 1\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "interviewroom-2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"roomNumber\": 2,\r\n     \"name\": \"Room 2\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "interviewroom-3",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"roomNumber\": 3,\r\n     \"name\": \"Room 3\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "interviewroom-4",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"roomNumber\": 4,\r\n     \"name\": \"Room 4\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "applicant-luwase",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Leiss\",\r\n\"lastName\": \"Uwase\",\r\n\"email\": \"leiss.uwase@gmail.com\",\r\n\"phone\": \"0788000000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/applicants/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "applicant-lizawase",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Lisa\",\r\n\"lastName\": \"Uwase\",\r\n\"email\": \"lisa.uwase@gmail.com\",\r\n\"phone\": \"0788045000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/applicants/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "applicant-ericyusa",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/applicants/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "applicant-israsano",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Israel\",\r\n\"lastName\": \"Sano\",\r\n\"email\": \"sano.israel@example.com\",\r\n\"phone\": \"0788451586\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/applicants/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "applicant-anniengabire",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Annie\",\r\n\"lastName\": \"Ingabire\",\r\n\"email\": \"Annie.Ingabire@example.com\",\r\n\"phone\": \"07966829834\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/applicants/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "A2-save department",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Finance\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/departments/save",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "departments",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-all department",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Finance\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/departments/all",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "departments",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-get-by-id department",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Finance\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/departments/0eb91c3d-c202-43ca-9480-5086cf70a288",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "departments",
+            "0eb91c3d-c202-43ca-9480-5086cf70a288"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-update department",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Finance and Accounting\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/departments/update/0eb91c3d-c202-43ca-9480-5086cf70a288",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "departments",
+            "update",
+            "0eb91c3d-c202-43ca-9480-5086cf70a288"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-delete department",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/departments/delete/0eb91c3d-c202-43ca-9480-5086cf70a288",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "departments",
+            "delete",
+            "0eb91c3d-c202-43ca-9480-5086cf70a288"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-interviewrooms-save",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"roomNumber\": 1,\r\n     \"name\": \"Room 1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/interview-rooms/save",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "interview-rooms",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-interviewrooms-all",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/interview-rooms/all",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "interview-rooms",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-interviewrooms-get by id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/interview-rooms/2c4d8765-348b-47b5-8f44-90c5dbd2a3b9",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "interview-rooms",
+            "2c4d8765-348b-47b5-8f44-90c5dbd2a3b9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-interviewrooms-update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"roomNumber\": 1,\r\n     \"name\": \"Room One\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/interview-rooms/update/ 2c4d8765-348b-47b5-8f44-90c5dbd2a3b9",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "interview-rooms",
+            "update",
+            " 2c4d8765-348b-47b5-8f44-90c5dbd2a3b9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-interviewrooms-all after update",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/interview-rooms/all",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "interview-rooms",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-interviewrooms-delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/interview-rooms/delete/2c4d8765-348b-47b5-8f44-90c5dbd2a3b9",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "interview-rooms",
+            "delete",
+            "2c4d8765-348b-47b5-8f44-90c5dbd2a3b9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Applicants-save",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"firstName\": \"Leiss\",\r\n\"lastName\": \"Uwase\",\r\n\"email\": \"leiss.uwase@example.com\",\r\n\"phone\": \"0788000000\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/applicants/save",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "applicants",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Applicants-all",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/applicants/all",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "applicants",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Applicants-get-by-id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/applicants/abf420b9-8d36-490b-8d4b-162f612d86d9",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "applicants",
+            "abf420b9-8d36-490b-8d4b-162f612d86d9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Applicants-update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"firstName\": \"Lisa\",\r\n\"lastName\": \"Uwera\",\r\n\"email\": \"lisa.uwera@hotmail.com\",\r\n\"phone\": \"0788000444\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/applicants/update/abf420b9-8d36-490b-8d4b-162f612d86d9",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "applicants",
+            "update",
+            "abf420b9-8d36-490b-8d4b-162f612d86d9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Applicants-get by lastname",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/applicants/by-last-name?lastName=Uwera",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "applicants",
+            "by-last-name"
+          ],
+          "query": [
+            {
+              "key": "lastName",
+              "value": "Uwera"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Applicants-delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/applicants/delete/abf420b9-8d36-490b-8d4b-162f612d86d9",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "applicants",
+            "delete",
+            "abf420b9-8d36-490b-8d4b-162f612d86d9"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseurl",
+      "value": ""
+    },
+    {
+      "key": "http://localhost:8080",
+      "value": ""
+    }
+  ]
+}

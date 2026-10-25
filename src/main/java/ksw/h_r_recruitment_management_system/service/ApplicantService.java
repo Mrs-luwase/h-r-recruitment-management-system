@@ -23,6 +23,7 @@ public class ApplicantService {
     }
 
     public List<Applicant> getAllApplicants() {
+
         return applicantRepo.findAll();
     }
 
