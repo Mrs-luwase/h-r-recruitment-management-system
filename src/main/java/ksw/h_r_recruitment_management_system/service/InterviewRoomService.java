@@ -18,8 +18,8 @@ public class InterviewRoomService {
     @Autowired
     private InterviewRoomRepository interviewRoomRepo;
 
-    public String saveInterviewRoom(InterviewRoom interviewRoom) {
-        interviewRoomRepo.save(interviewRoom);
+    public String saveInterviewRoom(InterviewRoom i) {
+        interviewRoomRepo.save(i);
         return "Interview room saved successfully";
     }
 
