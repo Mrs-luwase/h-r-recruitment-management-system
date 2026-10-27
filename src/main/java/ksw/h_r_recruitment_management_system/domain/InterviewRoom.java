@@ -12,7 +12,7 @@ public class InterviewRoom {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
-    @Column(name = "room_number", nullable = false, unique =true)
+    @Column(name = "room_number", nullable = false)
     private int roomNumber;
 
     @Column(nullable = false, length = 100)
