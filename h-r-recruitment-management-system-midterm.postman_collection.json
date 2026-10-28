@@ -386,6 +386,127 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "recruiter-Aline",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Aline\",\r\n  \"lastName\": \"Mukamana\",\r\n  \"email\": \"aline.mukamana@example.com\",\r\n  \"interviewRoom\": { \"id\": \"24a1055e-3020-4e22-b807-12f298578c4d\" },\r\n  \"departments\": [\r\n    { \"id\": \"2764aa84-15d1-4007-b36e-b9ff030d9522\" },\r\n    { \"id\": \"b42b6347-b861-4466-b9df-bda2ef765d7e\" }\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/recruiters/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "recruiter-Eric",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Habimana\",\r\n\"email\": \"eric.habimana@hotmail.com\",\r\n\"interviewRoom\": { \"id\": \"e047a32a-d60f-4f12-8542-83a42bd11730\" },\r\n  \"departments\": [\r\n    { \"id\": \"5b12c80a-b940-4c57-a325-227ead9c6ad3\" }\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/recruiters/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "recruiter-Diane",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"firstName\": \"Diane\",\n  \"lastName\": \"Uwimana\",\n  \"email\": \"diane.uwimana@example.com\",\n  \"interviewRoom\": { \"id\": \"28ee5fd5-91a1-4570-81a4-249a7ab6f4aa\" },\n  \"departments\": [\n    { \"id\": \"2764aa84-15d1-4007-b36e-b9ff030d9522\" }\n  ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/recruiters/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Recruit-del-test",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Temp\",\r\n  \"lastName\": \"Test\",\r\n  \"email\": \"temp@example.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/recruiters/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "save"
+              ]
+            }
+          },
+          "response": []
         }
       ]
     },
@@ -424,15 +545,6 @@
       "request": {
         "method": "GET",
         "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"name\": \"Finance\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
         "url": {
           "raw": "http://localhost:8080/api/departments/all",
           "protocol": "http",
@@ -813,6 +925,173 @@
             "applicants",
             "delete",
             "abf420b9-8d36-490b-8d4b-162f612d86d9"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Recruiters-All",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/recruiters/all",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "recruiters",
+            "all"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Recruiters-save",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"Aline\",\r\n  \"lastName\": \"Mukamana\",\r\n  \"email\": \"aline.mukamana@example.com\",\r\n  \"interviewRoom\": { \"id\": \"24a1055e-3020-4e22-b807-12f298578c4d\" },\r\n  \"departments\": [\r\n    { \"id\": \"2764aa84-15d1-4007-b36e-b9ff030d9522\" },\r\n    { \"id\": \"b42b6347-b861-4466-b9df-bda2ef765d7e\" }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/recruiters/save",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "recruiters",
+            "save"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Recruiters-get-by-id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/api/recruiters/2945e268-bbf3-44f6-bece-ffa336173b15",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "recruiters",
+            "2945e268-bbf3-44f6-bece-ffa336173b15"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Recruiters-get-by-wrong-id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/recruiters/2945e268-bbf3-44f6-bece-ffa336173b23",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "recruiters",
+            "2945e268-bbf3-44f6-bece-ffa336173b23"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Recruiters-update",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"firstName\": \"Aline\",\r\n  \"lastName\": \"Mukamana\",\r\n  \"email\": \"aline.mukamana@hotmail.com\",\r\n  \"interviewRoom\": { \"id\": \"24a1055e-3020-4e22-b807-12f298578c4d\" },\r\n  \"departments\": [\r\n    { \"id\": \"2764aa84-15d1-4007-b36e-b9ff030d9522\" },\r\n    { \"id\": \"b42b6347-b861-4466-b9df-bda2ef765d7e\" }\r\n  ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/recruiters/update/2945e268-bbf3-44f6-bece-ffa336173b15",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "recruiters",
+            "update",
+            "2945e268-bbf3-44f6-bece-ffa336173b15"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "A2-Recruiters-delete",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "localhost:8080/api/recruiters/delete/3f94f8b7-e1ee-4d8c-9eda-988bf3c38fb4",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "recruiters",
+            "delete",
+            "3f94f8b7-e1ee-4d8c-9eda-988bf3c38fb4"
           ]
         }
       },
