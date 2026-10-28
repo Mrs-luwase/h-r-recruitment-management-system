@@ -507,595 +507,950 @@
             }
           },
           "response": []
+        },
+        {
+          "name": "Interview-1",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-10-20\",\r\n  \"status\": \"REJECTED\",\r\n  \"vacancyTitle\": \"Accountant\",\r\n  \"applicant\": { \"id\": \"b0c52d0f-b16f-4fc8-8596-c0de1a99a0fd\" },\r\n  \"recruiter\": { \"id\": \"2945e268-bbf3-44f6-bece-ffa336173b15\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Interview-2",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-10-20\",\r\n  \"status\": \"INVITED\",\r\n  \"vacancyTitle\": \"Finance Officer\",\r\n  \"applicant\": { \"id\": \"9253ec50-a2e8-4817-8a18-7f51db528964\" },\r\n  \"recruiter\": { \"id\": \"2945e268-bbf3-44f6-bece-ffa336173b15\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Interview-3",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-10-12\",\r\n  \"status\": \"OFFERED\",\r\n  \"vacancyTitle\": \"Production Supervisor\",\r\n  \"applicant\": { \"id\": \"b0c52d0f-b16f-4fc8-8596-c0de1a99a0fd\" },\r\n  \"recruiter\": { \"id\": \"6e323201-0de6-46d1-862b-c6d0a2a3892a\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Interview-4",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-11-05\",\r\n  \"status\": \"INVITED\",\r\n  \"vacancyTitle\": \"Web Developer\",\r\n  \"applicant\": { \"id\": \"b0c52d0f-b16f-4fc8-8596-c0de1a99a0fd\" },\r\n  \"recruiter\": { \"id\": \"2945e268-bbf3-44f6-bece-ffa336173b15\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Interview-5",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-10-15\",\r\n  \"status\": \"OFFERED\",\r\n  \"vacancyTitle\": \"Warehouse Clerk\",\r\n  \"applicant\": { \"id\": \"4c49b785-bacb-413c-8ba2-626262a9b147\" },\r\n  \"recruiter\": { \"id\": \"6e323201-0de6-46d1-862b-c6d0a2a3892a\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Interview-6",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-10-22\",\r\n  \"status\": \"ATTENDED\",\r\n  \"vacancyTitle\": \"HR Assistant\",\r\n  \"applicant\": { \"id\": \"6a61b5ee-4651-4938-bc16-80a25aa1b2ee\" },\r\n  \"recruiter\": { \"id\": \"d64e07a5-9d11-4532-b65b-b4fcb4bfc6bb\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Interview-7",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-11-03\",\r\n  \"status\": \"INVITED\",\r\n  \"vacancyTitle\": \"Site Engineer\",\r\n  \"applicant\": { \"id\": \"c2b593a3-931d-4055-9139-bd2e63bf38ce\" },\r\n  \"recruiter\": { \"id\": \"2945e268-bbf3-44f6-bece-ffa336173b15\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Interview-8",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-10-08\",\r\n  \"status\": \"OFFERED\",\r\n  \"vacancyTitle\": \"Procurement Officer\",\r\n  \"applicant\": { \"id\": \"9253ec50-a2e8-4817-8a18-7f51db528964\" },\r\n  \"recruiter\": { \"id\": \"2945e268-bbf3-44f6-bece-ffa336173b15\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Interview-9",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-11-10\",\r\n  \"status\": \"INVITED\",\r\n  \"vacancyTitle\": \"Mechanical Technician\",\r\n  \"applicant\": { \"id\": \"c2b593a3-931d-4055-9139-bd2e63bf38ce\" },\r\n  \"recruiter\": { \"id\": \"6e323201-0de6-46d1-862b-c6d0a2a3892a\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Interview-10",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-10-05\",\r\n  \"status\": \"REJECTED\",\r\n  \"vacancyTitle\": \"Payroll Clerk\",\r\n  \"applicant\": { \"id\": \"6a61b5ee-4651-4938-bc16-80a25aa1b2ee\" },\r\n  \"recruiter\": { \"id\": \"6e323201-0de6-46d1-862b-c6d0a2a3892a\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
         }
       ]
     },
     {
-      "name": "A2-save department",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"name\": \"Finance\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+      "name": "Part A",
+      "item": [
+        {
+          "name": "A2-save department",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Finance\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/departments/save",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "save"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "http://localhost:8080/api/departments/save",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "departments",
-            "save"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-all department",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8080/api/departments/all",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "departments",
-            "all"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-get-by-id department",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"name\": \"Finance\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+        {
+          "name": "A2-all department",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/departments/all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "all"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "http://localhost:8080/api/departments/0eb91c3d-c202-43ca-9480-5086cf70a288",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "departments",
-            "0eb91c3d-c202-43ca-9480-5086cf70a288"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-update department",
-      "request": {
-        "method": "PUT",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"name\": \"Finance and Accounting\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+        {
+          "name": "A2-get-by-id department",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Finance\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/departments/0eb91c3d-c202-43ca-9480-5086cf70a288",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "0eb91c3d-c202-43ca-9480-5086cf70a288"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "http://localhost:8080/api/departments/update/0eb91c3d-c202-43ca-9480-5086cf70a288",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "departments",
-            "update",
-            "0eb91c3d-c202-43ca-9480-5086cf70a288"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-delete department",
-      "request": {
-        "method": "DELETE",
-        "header": [],
-        "url": {
-          "raw": "http://localhost:8080/api/departments/delete/0eb91c3d-c202-43ca-9480-5086cf70a288",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "departments",
-            "delete",
-            "0eb91c3d-c202-43ca-9480-5086cf70a288"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-interviewrooms-save",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n    \"roomNumber\": 1,\r\n     \"name\": \"Room 1\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+        {
+          "name": "A2-update department",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"name\": \"Finance and Accounting\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/departments/update/0eb91c3d-c202-43ca-9480-5086cf70a288",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "update",
+                "0eb91c3d-c202-43ca-9480-5086cf70a288"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "localhost:8080/api/interview-rooms/save",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "interview-rooms",
-            "save"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-interviewrooms-all",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/interview-rooms/all",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "interview-rooms",
-            "all"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-interviewrooms-get by id",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/interview-rooms/2c4d8765-348b-47b5-8f44-90c5dbd2a3b9",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "interview-rooms",
-            "2c4d8765-348b-47b5-8f44-90c5dbd2a3b9"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-interviewrooms-update",
-      "request": {
-        "method": "PUT",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n    \"roomNumber\": 1,\r\n     \"name\": \"Room One\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+        {
+          "name": "A2-delete department",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/departments/delete/0eb91c3d-c202-43ca-9480-5086cf70a288",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "delete",
+                "0eb91c3d-c202-43ca-9480-5086cf70a288"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "localhost:8080/api/interview-rooms/update/ 2c4d8765-348b-47b5-8f44-90c5dbd2a3b9",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "interview-rooms",
-            "update",
-            " 2c4d8765-348b-47b5-8f44-90c5dbd2a3b9"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-interviewrooms-all after update",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/interview-rooms/all",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "interview-rooms",
-            "all"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-interviewrooms-delete",
-      "request": {
-        "method": "DELETE",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/interview-rooms/delete/2c4d8765-348b-47b5-8f44-90c5dbd2a3b9",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "interview-rooms",
-            "delete",
-            "2c4d8765-348b-47b5-8f44-90c5dbd2a3b9"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Applicants-save",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n\"firstName\": \"Leiss\",\r\n\"lastName\": \"Uwase\",\r\n\"email\": \"leiss.uwase@example.com\",\r\n\"phone\": \"0788000000\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+        {
+          "name": "A2-interviewrooms-save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"roomNumber\": 1,\r\n     \"name\": \"Room 1\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "save"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "localhost:8080/api/applicants/save",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "applicants",
-            "save"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Applicants-all",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/applicants/all",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "applicants",
-            "all"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Applicants-get-by-id",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/applicants/abf420b9-8d36-490b-8d4b-162f612d86d9",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "applicants",
-            "abf420b9-8d36-490b-8d4b-162f612d86d9"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Applicants-update",
-      "request": {
-        "method": "PUT",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n\"firstName\": \"Lisa\",\r\n\"lastName\": \"Uwera\",\r\n\"email\": \"lisa.uwera@hotmail.com\",\r\n\"phone\": \"0788000444\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+        {
+          "name": "A2-interviewrooms-all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/all",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "all"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "localhost:8080/api/applicants/update/abf420b9-8d36-490b-8d4b-162f612d86d9",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "applicants",
-            "update",
-            "abf420b9-8d36-490b-8d4b-162f612d86d9"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Applicants-get by lastname",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/applicants/by-last-name?lastName=Uwera",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "applicants",
-            "by-last-name"
-          ],
-          "query": [
-            {
-              "key": "lastName",
-              "value": "Uwera"
+        {
+          "name": "A2-interviewrooms-get by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/2c4d8765-348b-47b5-8f44-90c5dbd2a3b9",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "2c4d8765-348b-47b5-8f44-90c5dbd2a3b9"
+              ]
             }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Applicants-delete",
-      "request": {
-        "method": "DELETE",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/applicants/delete/abf420b9-8d36-490b-8d4b-162f612d86d9",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "applicants",
-            "delete",
-            "abf420b9-8d36-490b-8d4b-162f612d86d9"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Recruiters-All",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "localhost:8080/api/recruiters/all",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "recruiters",
-            "all"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Recruiters-save",
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"firstName\": \"Aline\",\r\n  \"lastName\": \"Mukamana\",\r\n  \"email\": \"aline.mukamana@example.com\",\r\n  \"interviewRoom\": { \"id\": \"24a1055e-3020-4e22-b807-12f298578c4d\" },\r\n  \"departments\": [\r\n    { \"id\": \"2764aa84-15d1-4007-b36e-b9ff030d9522\" },\r\n    { \"id\": \"b42b6347-b861-4466-b9df-bda2ef765d7e\" }\r\n  ]\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+        {
+          "name": "A2-interviewrooms-update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"roomNumber\": 1,\r\n     \"name\": \"Room One\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/update/ 2c4d8765-348b-47b5-8f44-90c5dbd2a3b9",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "update",
+                " 2c4d8765-348b-47b5-8f44-90c5dbd2a3b9"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "localhost:8080/api/recruiters/save",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "recruiters",
-            "save"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Recruiters-get-by-id",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": {
-          "raw": "localhost:8080/api/recruiters/2945e268-bbf3-44f6-bece-ffa336173b15",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "recruiters",
-            "2945e268-bbf3-44f6-bece-ffa336173b15"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "A2-Recruiters-get-by-wrong-id",
-      "request": {
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+        {
+          "name": "A2-interviewrooms-all after update",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/all",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "all"
+              ]
             }
-          }
+          },
+          "response": []
         },
-        "url": {
-          "raw": "localhost:8080/api/recruiters/2945e268-bbf3-44f6-bece-ffa336173b23",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "recruiters",
-            "2945e268-bbf3-44f6-bece-ffa336173b23"
-          ]
+        {
+          "name": "A2-interviewrooms-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/interview-rooms/delete/2c4d8765-348b-47b5-8f44-90c5dbd2a3b9",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "delete",
+                "2c4d8765-348b-47b5-8f44-90c5dbd2a3b9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Applicants-save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Leiss\",\r\n\"lastName\": \"Uwase\",\r\n\"email\": \"leiss.uwase@example.com\",\r\n\"phone\": \"0788000000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/applicants/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Applicants-all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/applicants/all",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Applicants-get-by-id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/applicants/abf420b9-8d36-490b-8d4b-162f612d86d9",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "abf420b9-8d36-490b-8d4b-162f612d86d9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Applicants-update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Lisa\",\r\n\"lastName\": \"Uwera\",\r\n\"email\": \"lisa.uwera@hotmail.com\",\r\n\"phone\": \"0788000444\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/applicants/update/abf420b9-8d36-490b-8d4b-162f612d86d9",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "update",
+                "abf420b9-8d36-490b-8d4b-162f612d86d9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Applicants-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/applicants/delete/abf420b9-8d36-490b-8d4b-162f612d86d9",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "delete",
+                "abf420b9-8d36-490b-8d4b-162f612d86d9"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Recruiters-All",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/recruiters/all",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Recruiters-save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Aline\",\r\n  \"lastName\": \"Mukamana\",\r\n  \"email\": \"aline.mukamana@example.com\",\r\n  \"interviewRoom\": { \"id\": \"24a1055e-3020-4e22-b807-12f298578c4d\" },\r\n  \"departments\": [\r\n    { \"id\": \"2764aa84-15d1-4007-b36e-b9ff030d9522\" },\r\n    { \"id\": \"b42b6347-b861-4466-b9df-bda2ef765d7e\" }\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/recruiters/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Recruiters-get-by-id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/recruiters/2945e268-bbf3-44f6-bece-ffa336173b15",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "2945e268-bbf3-44f6-bece-ffa336173b15"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Recruiters-get-by-wrong-id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/recruiters/2945e268-bbf3-44f6-bece-ffa336173b23",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "2945e268-bbf3-44f6-bece-ffa336173b23"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Recruiters-update",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"firstName\": \"Aline\",\r\n  \"lastName\": \"Mukamana\",\r\n  \"email\": \"aline.mukamana@hotmail.com\",\r\n  \"interviewRoom\": { \"id\": \"24a1055e-3020-4e22-b807-12f298578c4d\" },\r\n  \"departments\": [\r\n    { \"id\": \"2764aa84-15d1-4007-b36e-b9ff030d9522\" },\r\n    { \"id\": \"b42b6347-b861-4466-b9df-bda2ef765d7e\" }\r\n  ]\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/recruiters/update/2945e268-bbf3-44f6-bece-ffa336173b15",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "update",
+                "2945e268-bbf3-44f6-bece-ffa336173b15"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Recruiters-delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/recruiters/delete/3f94f8b7-e1ee-4d8c-9eda-988bf3c38fb4",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "delete",
+                "3f94f8b7-e1ee-4d8c-9eda-988bf3c38fb4"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Intervews-save",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"interviewDate\": \"2026-12-20\",\r\n  \"status\": \"INVITED\",\r\n  \"vacancyTitle\": \"Accountant\",\r\n  \"applicant\": { \"id\": \"b0c52d0f-b16f-4fc8-8596-c0de1a99a0fd\" },\r\n  \"recruiter\": { \"id\": \"2945e268-bbf3-44f6-bece-ffa336173b15\" }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/save",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "save"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "A2-Interviews-all",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
         }
-      },
-      "response": []
+      ]
     },
     {
-      "name": "A2-Recruiters-update",
-      "request": {
-        "method": "PUT",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n  \"firstName\": \"Aline\",\r\n  \"lastName\": \"Mukamana\",\r\n  \"email\": \"aline.mukamana@hotmail.com\",\r\n  \"interviewRoom\": { \"id\": \"24a1055e-3020-4e22-b807-12f298578c4d\" },\r\n  \"departments\": [\r\n    { \"id\": \"2764aa84-15d1-4007-b36e-b9ff030d9522\" },\r\n    { \"id\": \"b42b6347-b861-4466-b9df-bda2ef765d7e\" }\r\n  ]\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
+      "name": "Part B",
+      "item": [
+        {
+          "name": "B1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/applicants/by-last-name?lastName=Uwera",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "by-last-name"
+              ],
+              "query": [
+                {
+                  "key": "lastName",
+                  "value": "Uwera"
+                }
+              ]
             }
-          }
-        },
-        "url": {
-          "raw": "localhost:8080/api/recruiters/update/2945e268-bbf3-44f6-bece-ffa336173b15",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "recruiters",
-            "update",
-            "2945e268-bbf3-44f6-bece-ffa336173b15"
-          ]
+          },
+          "response": []
         }
-      },
-      "response": []
+      ]
     },
     {
-      "name": "A2-Recruiters-delete",
-      "request": {
-        "method": "DELETE",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "localhost:8080/api/recruiters/delete/3f94f8b7-e1ee-4d8c-9eda-988bf3c38fb4",
-          "host": [
-            "localhost"
-          ],
-          "port": "8080",
-          "path": [
-            "api",
-            "recruiters",
-            "delete",
-            "3f94f8b7-e1ee-4d8c-9eda-988bf3c38fb4"
-          ]
-        }
-      },
-      "response": []
+      "name": "Part C",
+      "item": []
     }
   ],
   "variable": [
