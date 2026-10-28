@@ -1405,12 +1405,30 @@
           "response": []
         },
         {
-          "name": "New Request",
+          "name": "A2-Interviews-get-by-id",
           "request": {
             "method": "GET",
             "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
             "url": {
-              "raw": ""
+              "raw": "localhost:8080/api/interviews/557335d6-bff9-43c8-8d1e-fdfdc923307e",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "557335d6-bff9-43c8-8d1e-fdfdc923307e"
+              ]
             }
           },
           "response": []
@@ -1440,6 +1458,184 @@
                 {
                   "key": "lastName",
                   "value": "Uwera"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B2-by-status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:8080/api/interviews/by-status?status=INVITED",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "by-status"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "INVITED"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B2-by-status-invalid",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/by-status?status=WRONG",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "by-status"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "WRONG"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B3-between",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/between?start=2026-10-01&end=2026-10-31",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "between"
+              ],
+              "query": [
+                {
+                  "key": "start",
+                  "value": "2026-10-01"
+                },
+                {
+                  "key": "end",
+                  "value": "2026-10-31"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B3-between-single-day",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/between?start=2026-10-20&end=2026-10-20",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "between"
+              ],
+              "query": [
+                {
+                  "key": "start",
+                  "value": "2026-10-20"
+                },
+                {
+                  "key": "end",
+                  "value": "2026-10-20"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "B3-between-bad-format",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/api/interviews/between?start=01-10-2026&end=2026-10-31",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interviews",
+                "between"
+              ],
+              "query": [
+                {
+                  "key": "start",
+                  "value": "01-10-2026"
+                },
+                {
+                  "key": "end",
+                  "value": "2026-10-31"
                 }
               ]
             }

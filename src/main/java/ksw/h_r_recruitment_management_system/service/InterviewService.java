@@ -1,10 +1,12 @@
 package ksw.h_r_recruitment_management_system.service;
 
 import ksw.h_r_recruitment_management_system.domain.Interview;
+import ksw.h_r_recruitment_management_system.domain.InterviewStatus;
 import ksw.h_r_recruitment_management_system.repository.InterviewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -51,5 +53,13 @@ public class InterviewService {
         }
         interviewRepo.deleteById(id);
         return "Interview deleted successfully";
+    }
+
+    public List<Interview> getInterviewsByStatus(InterviewStatus status){
+        return interviewRepo.findByStatusOrderByInterviewDateAsc(status);
+    }
+
+    public List<Interview> getInterviewsBetween(LocalDate start, LocalDate end){
+        return interviewRepo.findByInterviewDateBetweenOrderByInterviewDateAsc(start, end);
     }
 }

@@ -3,12 +3,15 @@ package ksw.h_r_recruitment_management_system.controller;
 
 
 import ksw.h_r_recruitment_management_system.domain.Interview;
+import ksw.h_r_recruitment_management_system.domain.InterviewStatus;
 import ksw.h_r_recruitment_management_system.service.InterviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeParseException;
 import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
@@ -61,4 +64,23 @@ public class InterviewController {
         return new ResponseEntity<>(message, HttpStatus.OK);
    }
 
+   @GetMapping("/by-status")
+    public ResponseEntity<List<Interview>> getInterviewByStatus(@RequestParam InterviewStatus status) {
+        return new ResponseEntity<>(interviewServ.getInterviewsByStatus(status), HttpStatus.OK);
+   }
+
+   @GetMapping("/between")
+    public ResponseEntity<?> getInterviewsBetween(@RequestParam String start, @RequestParam String end) {
+
+        LocalDate startDate;
+        LocalDate endDate;
+        try {
+            startDate = LocalDate.parse(start);
+            endDate = LocalDate.parse(end);
+        } catch (DateTimeParseException e) {
+            return new ResponseEntity<>("Dates must be in the format yyyy-MM-dd", HttpStatus.BAD_REQUEST);
+
+        }
+        return new ResponseEntity<>(interviewServ.getInterviewsBetween(startDate, endDate), HttpStatus.OK);
+   }
 }
