@@ -17,7 +17,7 @@ public class Recruiter {
     private String email;
 
     @ManyToOne
-    @JoinColumn(name = "recruiter_room_id")
+    @JoinColumn(name = "interview_room_id")
     private InterviewRoom interviewRoom;
 
     @ManyToMany

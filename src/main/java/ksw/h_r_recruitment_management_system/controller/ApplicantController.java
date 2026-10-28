@@ -59,7 +59,7 @@ public class ApplicantController {
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<String> Applicant(@PathVariable UUID id) {
+    public ResponseEntity<String> deleteApplicant(@PathVariable UUID id) {
 
         String message = applicantServ.deleteApplicant(id);
         if (message.equals(ApplicantService.NOT_FOUND)) {
