@@ -21,13 +21,12 @@ public interface InterviewRoomRepository extends JpaRepository<InterviewRoom, UU
 
     boolean existsByRoomNumber(int roomNumber);
 
-    /* Own addition//JPQL practice
-    @Query("""
-           SELECT r
-           FROM InterviewRoom r
-           WHERE LOWER(r.name) LIKE LOWER(CONCAT('%', :name, '%'))
+   @Query("""
+           SELECT ir FROM InterviewRoom ir
+                      WHERE NOT EXISTS(
+                          SELECT r FROM Recruiter r
+                          WHERE r.interviewRoom = ir)
+                      ORDER BY ir.roomNumber ASC
            """)
-    List<InterviewRoom> searchByName(@Param("name") String name);
-
-     */
+    List<InterviewRoom> findFreeInterviewRooms();
 }

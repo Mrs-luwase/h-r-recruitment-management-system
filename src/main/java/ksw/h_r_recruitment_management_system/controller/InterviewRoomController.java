@@ -1,5 +1,6 @@
 package ksw.h_r_recruitment_management_system.controller;
 
+import ksw.h_r_recruitment_management_system.domain.Interview;
 import ksw.h_r_recruitment_management_system.domain.InterviewRoom;
 import ksw.h_r_recruitment_management_system.service.InterviewRoomService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,5 +57,9 @@ public class InterviewRoomController {
             return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(message, HttpStatus.OK);
+    }
+    @GetMapping("/free")
+    public ResponseEntity<List<InterviewRoom>> getFreeInterviewRooms() {
+        return new ResponseEntity<>(interviewRoomService.getFreeInterviewRooms(), HttpStatus.OK);
     }
 }

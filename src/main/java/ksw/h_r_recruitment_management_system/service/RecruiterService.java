@@ -52,4 +52,7 @@ public class RecruiterService {
         recruiterRepo.deleteById(id);
         return "Recruiter deleted successfully";
     }
+    public List<Recruiter> getRecruitersByDepartment(String name) {
+        return recruiterRepo.findRecruitersByDepartmentName(name);
+    }
 }

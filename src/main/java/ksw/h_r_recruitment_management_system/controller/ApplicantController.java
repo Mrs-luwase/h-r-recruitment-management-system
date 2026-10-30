@@ -5,6 +5,7 @@ import ksw.h_r_recruitment_management_system.domain.Applicant;
 import ksw.h_r_recruitment_management_system.domain.InterviewRoom;
 import ksw.h_r_recruitment_management_system.service.ApplicantService;
 import ksw.h_r_recruitment_management_system.service.InterviewRoomService;
+import ksw.h_r_recruitment_management_system.service.RecruiterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +21,9 @@ public class ApplicantController {
 
     @Autowired
     private ApplicantService applicantServ;
+
+    @Autowired
+    private RecruiterService recruiterServ;
 
     @PostMapping("/save")
     public ResponseEntity<String> saveApplicant(@RequestBody Applicant a) {
@@ -66,5 +70,14 @@ public class ApplicantController {
             return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(message, HttpStatus.OK);
+    }
+
+    @GetMapping("/of-recruiter/{recruiterId}")
+    public ResponseEntity<?> getApplicantsOfRecruiter(@PathVariable UUID recruiterId) {
+        if(recruiterServ.getRecruiterById(recruiterId).isEmpty()) {
+            return new ResponseEntity<>(ApplicantService.NOT_FOUND, HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(applicantServ.getApplicantsOfRecruiter(recruiterId), HttpStatus.OK);
+
     }
 }

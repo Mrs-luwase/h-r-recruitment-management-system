@@ -62,4 +62,9 @@ public class RecruiterController {
         }
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
+
+    @GetMapping("/by-department")
+    public ResponseEntity<List<Recruiter>> getRecruitersByDepartment(@RequestParam String name) {
+        return new ResponseEntity<>(recruiterServ.getRecruitersByDepartment(name), HttpStatus.OK);
+    }
 }

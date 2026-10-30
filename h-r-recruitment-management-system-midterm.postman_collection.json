@@ -1646,7 +1646,206 @@
     },
     {
       "name": "Part C",
-      "item": []
+      "item": [
+        {
+          "name": "C1-by-department",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"firstName\": \"Eric\",\r\n\"lastName\": \"Cyusa\",\r\n\"email\": \"ericcyussa@hotmail.com\",\r\n\"phone\": \"0790250456\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/recruiters/by-department?name=fin",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "by-department"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "fin"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C1-by-department-no-match",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/recruiters/by-department?name=zzz",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "by-department"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "zzz"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C1-by-department-uppercase",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/recruiters/by-department?name=FINANCE",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "recruiters",
+                "by-department"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "FINANCE"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C2-free-rooms",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/interview-rooms/free",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "interview-rooms",
+                "free"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C3-unused-departments",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/departments/unused",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "departments",
+                "unused"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C4-applicants-of-recruiter",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/applicants/of-recruiter/2945e268-bbf3-44f6-bece-ffa336173b15",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "of-recruiter",
+                "2945e268-bbf3-44f6-bece-ffa336173b15"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C4-applicants-of-recruiter-eric",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/applicants/of-recruiter/6e323201-0de6-46d1-862b-c6d0a2a3892a",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "of-recruiter",
+                "6e323201-0de6-46d1-862b-c6d0a2a3892a"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "C4-applicants-of-recruiter-not-found",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/applicants/of-recruiter/00000000-0000-0000-0000-000000000000",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "applicants",
+                "of-recruiter",
+                "00000000-0000-0000-0000-000000000000"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
     }
   ],
   "variable": [

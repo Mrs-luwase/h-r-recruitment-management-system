@@ -34,6 +34,11 @@ public class ApplicantService {
         return applicantRepo.findByLastNameIgnoreCaseOrderByFirstNameAsc(lastName);
     }
 
+    public List<Applicant> getApplicantsOfRecruiter(UUID recruiterId) {
+        return applicantRepo.findApplicantsOfRecruiter(recruiterId);
+
+    }
+
     public String updateApplicant(UUID id,Applicant updated) {
 
         Optional<Applicant> existing = applicantRepo.findById(id);

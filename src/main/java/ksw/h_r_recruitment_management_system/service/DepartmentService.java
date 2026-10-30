@@ -47,4 +47,7 @@ public class DepartmentService {
         departmentRepo.deleteById(id);
         return "Department deleted successfully";
     }
+    public List<Department> getUnusedDepartments() {
+        return departmentRepo.findUnusedDepartments();
+    }
 }
