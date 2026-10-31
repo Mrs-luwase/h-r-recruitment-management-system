@@ -3,6 +3,7 @@ package ksw.h_r_recruitment_management_system.service;
 import ksw.h_r_recruitment_management_system.domain.Interview;
 import ksw.h_r_recruitment_management_system.domain.InterviewStatus;
 import ksw.h_r_recruitment_management_system.repository.InterviewRepository;
+import ksw.h_r_recruitment_management_system.repository.OnboardingDocumentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,10 @@ public class InterviewService {
 
     @Autowired
     private InterviewRepository interviewRepo;
+    @Autowired
+    private OnboardingDocumentRepository onboardingRepo;
+
+    public static final String HAS_DOCUMENTS = "That interview has onboarding documents, delete them first";
 
     public static final String NOT_FOUND = "The interview with that id does not exist";
 
@@ -66,6 +71,9 @@ public class InterviewService {
         if(!interviewRepo.existsById(id)){
             return NOT_FOUND;
 
+        }
+        if (onboardingRepo.existsByInterviewId(id)) {
+            return HAS_DOCUMENTS;
         }
         interviewRepo.deleteById(id);
         return "Interview deleted successfully";

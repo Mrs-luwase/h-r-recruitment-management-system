@@ -67,6 +67,9 @@ public class InterviewController {
         if(message.equals(InterviewService.NOT_FOUND)) {
             return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
         }
+        if (message.equals(InterviewService.HAS_DOCUMENTS)) {
+            return new ResponseEntity<>(message, HttpStatus.CONFLICT);
+        }
         return new ResponseEntity<>(message, HttpStatus.OK);
    }
 
