@@ -1,6 +1,5 @@
 package ksw.h_r_recruitment_management_system.service;
 
-import ksw.h_r_recruitment_management_system.domain.Interview;
 import ksw.h_r_recruitment_management_system.domain.InterviewRoom;
 import ksw.h_r_recruitment_management_system.repository.InterviewRoomRepository;
 

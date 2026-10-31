@@ -19,7 +19,23 @@ public class InterviewService {
 
     public static final String NOT_FOUND = "The interview with that id does not exist";
 
+    public static final String PAST_DATE = "Interview date cannot be in the past";
+    public static final String RECRUITER_BUSY = "Recruiter already has an interview on that date";
+    public static final String MISSING_DATA = "Interview date and recruiter are required";
+    public static final String STATUS_UPDATED = "Interview status updated successfully";
+
     public String saveInterview(Interview i) {
+        if(i.getInterviewDate() == null || i.getRecruiter() == null || i.getRecruiter().getId() == null) {
+            return MISSING_DATA;
+        }
+        if (i.getInterviewDate().isBefore(LocalDate.now())) {
+            return PAST_DATE;
+        }
+        if(interviewRepo.existsByRecruiterIdAndInterviewDateAndStatusNot(
+                i.getRecruiter().getId(), i.getInterviewDate(), InterviewStatus.REJECTED)){
+            return RECRUITER_BUSY;
+        }
+        i.setStatus(InterviewStatus.INVITED);
         interviewRepo.save(i);
         return "Interview saved successfully";
     }
@@ -62,4 +78,26 @@ public class InterviewService {
     public List<Interview> getInterviewsBetween(LocalDate start, LocalDate end){
         return interviewRepo.findByInterviewDateBetweenOrderByInterviewDateAsc(start, end);
     }
+    public String updateInterviewStatus(UUID id, InterviewStatus newStatus) {
+        Optional<Interview> existing = interviewRepo.findById(id);
+        if (existing.isEmpty()) {
+            return NOT_FOUND;
+        }
+        Interview interview = existing.get();
+        InterviewStatus current = interview.getStatus();
+
+        boolean allowed = false;
+        if (current == InterviewStatus.INVITED) {
+            allowed = newStatus == InterviewStatus.ATTENDED || newStatus == InterviewStatus.REJECTED;
+        } else if (current == InterviewStatus.ATTENDED) {
+            allowed = newStatus == InterviewStatus.OFFERED || newStatus == InterviewStatus.REJECTED;
+        }
+        if (!allowed) {
+            return "Cannot change status from " + current + " to " + newStatus;
+        }
+        interview.setStatus(newStatus);
+        interviewRepo.save(interview);
+        return STATUS_UPDATED;
+    }
+
 }

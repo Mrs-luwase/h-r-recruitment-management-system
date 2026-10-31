@@ -26,6 +26,12 @@ public class InterviewController {
     @PostMapping("/save")
     public ResponseEntity<String> saveInterview(@RequestBody Interview i) {
         String message = interviewServ.saveInterview(i);
+        if (message.equals(InterviewService.PAST_DATE) || message.equals(InterviewService.MISSING_DATA)) {
+            return new ResponseEntity<>(message, HttpStatus.BAD_REQUEST);
+        }
+        if (message.equals(InterviewService.RECRUITER_BUSY)) {
+            return new ResponseEntity<>(message, HttpStatus.CONFLICT);
+        }
         return new ResponseEntity<>(message, HttpStatus.CREATED);
     }
 
@@ -83,4 +89,20 @@ public class InterviewController {
         }
         return new ResponseEntity<>(interviewServ.getInterviewsBetween(startDate, endDate), HttpStatus.OK);
    }
+
+   @PatchMapping("/{id}/status")
+    public ResponseEntity<String> updateInterviewStatus(@PathVariable UUID id,
+                                                       @RequestParam InterviewStatus status) {
+        String message = interviewServ.updateInterviewStatus(id, status);
+        if (message.equals(InterviewService.NOT_FOUND)) {
+            return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
+        }
+        if(message.equals(InterviewService.STATUS_UPDATED)) {
+            return new ResponseEntity<>(message, HttpStatus.OK);
+
+        }
+        return new ResponseEntity<>(message, HttpStatus.BAD_REQUEST);
+    }
+
+
 }

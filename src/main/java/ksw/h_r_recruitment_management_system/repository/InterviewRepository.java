@@ -15,4 +15,9 @@ public interface InterviewRepository extends JpaRepository<Interview, UUID> {
     List<Interview> findByStatusOrderByInterviewDateAsc(InterviewStatus status);
 
     List<Interview> findByInterviewDateBetweenOrderByInterviewDateAsc(LocalDate start, LocalDate end);
+
+    //Does this recruiter already have an interview on this whose status is not the given one (REJECTED)
+    boolean existsByRecruiterIdAndInterviewDateAndStatusNot(UUID recruiterId, LocalDate interviewDate, InterviewStatus status);
+
+
 }

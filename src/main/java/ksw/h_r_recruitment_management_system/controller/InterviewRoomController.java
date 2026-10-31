@@ -58,6 +58,7 @@ public class InterviewRoomController {
         }
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
+
     @GetMapping("/free")
     public ResponseEntity<List<InterviewRoom>> getFreeInterviewRooms() {
         return new ResponseEntity<>(interviewRoomService.getFreeInterviewRooms(), HttpStatus.OK);

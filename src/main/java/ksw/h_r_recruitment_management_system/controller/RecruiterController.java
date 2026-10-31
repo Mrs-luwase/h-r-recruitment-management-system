@@ -1,7 +1,6 @@
 package ksw.h_r_recruitment_management_system.controller;
 
 
-
 import ksw.h_r_recruitment_management_system.domain.Recruiter;
 import ksw.h_r_recruitment_management_system.service.RecruiterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,9 +40,10 @@ public class RecruiterController {
         }
         return new ResponseEntity<>(RecruiterService.NOT_FOUND, HttpStatus.NOT_FOUND);
     }
+
     @PutMapping("/update/{id}")
     public ResponseEntity<String> updateRecruiter(@PathVariable UUID id,
-                                                   @RequestBody Recruiter rec) {
+                                                  @RequestBody Recruiter rec) {
 
         String message = recruiterServ.updateRecruiter(id, rec);
 
@@ -66,5 +66,34 @@ public class RecruiterController {
     @GetMapping("/by-department")
     public ResponseEntity<List<Recruiter>> getRecruitersByDepartment(@RequestParam String name) {
         return new ResponseEntity<>(recruiterServ.getRecruitersByDepartment(name), HttpStatus.OK);
+    }
+
+    @PutMapping("/{recruiterId}/departments/{departmentId}")
+    // PUT /api/recruiters/{recruiterId}/departments/{departmentId}
+    public ResponseEntity<String> addDepartmentToRecruiter(@PathVariable UUID recruiterId,
+                                                           @PathVariable UUID departmentId) {
+        String message = recruiterServ.addDepartmentToRecruiter(recruiterId, departmentId);
+        if (message.equals(RecruiterService.NOT_FOUND) || message.equals(RecruiterService.DEPARTMENT_NOT_FOUND)) {
+            return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
+        }
+        if (message.equals(RecruiterService.ALREADY_HAS_DEPARTMENT)) {
+            return new ResponseEntity<>(message, HttpStatus.CONFLICT);
+        }
+        return new ResponseEntity<>(message, HttpStatus.OK);
+    }
+
+    @PatchMapping("/{recruiterId}/interview-room")
+    public ResponseEntity<String> changeInterviewRoom(@PathVariable UUID recruiterId,
+                                                      @RequestParam int roomNumber) {
+        String message = recruiterServ.changeInterviewRoom(recruiterId, roomNumber);
+        if (message.equals(RecruiterService.NOT_FOUND) || message.equals(RecruiterService.ROOM_NOT_FOUND)) {
+            return new ResponseEntity<>(message, HttpStatus.NOT_FOUND);
+        }
+        if (message.equals(RecruiterService.ROOM_TAKEN)){
+            return new ResponseEntity<>(message, HttpStatus.CONFLICT);
+
+        }
+        return new ResponseEntity<>(message, HttpStatus.OK);
+
     }
 }
